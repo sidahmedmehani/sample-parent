@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>gr.javapapo.web</groupId>
+    <groupId>gr.javapapo</groupId>
 
     <artifactId>sample-web</artifactId>
 
@@ -32,6 +32,13 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>5.0</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
 
