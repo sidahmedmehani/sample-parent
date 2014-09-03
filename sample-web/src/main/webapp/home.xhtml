@@ -9,23 +9,25 @@
         >
 
 
-<body>
-<f:view>
-    <h:outputLabel value="Hello, world, ma page jsf simple qui ne marche pas tiziwatine"/>
+<f:view contentType="text/html">
+    <h:head>
 
-<h:form>
-    <p:mindmap value="#{mindMapCtrl.root}" style="width: 100%;height: 600px;border: 1px solid black;">
-        <p:ajax event="select" listener="#{mindMapCtrl.onNodeSelect}" />
-        <p:ajax event="dblselect" listener="#{mindMapCtrl.onNodeDblselect}" update="output" oncomplete="PF('details').show();" />
-    </p:mindmap>
+    </h:head>
+    <h:body>
+        <h:outputLabel value="Hello, world, ma page jsf simple qui ne marche pas tiziwatine"/>
 
-    <p:dialog widgetVar="details" header="Node Details" resizable="false" modal="true" showEffect="fade" hideEffect="fade">
-        <h:outputText id="output" value="#{mindMapCtrl.selectedNode.data}" />
-    </p:dialog>
-</h:form>
+        <h:form>
+            <p:mindmap value="#{mindMapCtrl.root}" style="width: 100%;height: 600px;border: 1px solid black;">
+                <p:ajax event="select" listener="#{mindMapCtrl.onNodeSelect}" />
+                <p:ajax event="dblselect" listener="#{mindMapCtrl.onNodeDblselect}" update="output" oncomplete="PF('details').show();" />
+            </p:mindmap>
 
+            <p:dialog widgetVar="details" header="Node Details" resizable="false" modal="true" showEffect="fade" hideEffect="fade">
+                <h:outputText id="output" value="#{mindMapCtrl.selectedNode.data}" />
+            </p:dialog>
+        </h:form>
+    </h:body>
 </f:view>
 
-</body>
 
 </html>

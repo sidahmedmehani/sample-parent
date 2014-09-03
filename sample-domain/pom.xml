@@ -13,7 +13,7 @@
 
     <name>sample-domain</name>
     <description>JPA entities for our project - domain model</description>
-    <packaging>ejb</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>${project.artifactId}</finalName>

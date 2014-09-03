@@ -13,7 +13,7 @@
 
     <name>sample-services</name>
     <description>EJB service layer</description>
-    <packaging>ejb</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <finalName>${project.artifactId}</finalName>

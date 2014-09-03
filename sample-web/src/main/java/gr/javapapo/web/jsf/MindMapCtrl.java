@@ -4,17 +4,19 @@ import org.primefaces.event.SelectEvent;
 import org.primefaces.model.mindmap.DefaultMindmapNode;
 import org.primefaces.model.mindmap.MindmapNode;
 
+import javax.faces.bean.ManagedBean;
 import javax.faces.view.ViewScoped;
-import javax.inject.Named;
 import java.io.Serializable;
 import java.util.UUID;
 
 /**
  * Created by hasni on 02/09/14.
  */
-@javax.faces.bean.ManagedBean
+
+@ManagedBean
 @ViewScoped
 public class MindMapCtrl implements Serializable {
+
     private MindmapNode root;
 
     private MindmapNode selectedNode;
