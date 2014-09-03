@@ -13,11 +13,11 @@
 
     <modules>
 
-        <module>sample-ear</module>
+
         <module>sample-web</module>
         <module>sample-services</module>
         <module>sample-domain</module>
-
+        <module>sample-ear</module>
     </modules>
 
     <properties>

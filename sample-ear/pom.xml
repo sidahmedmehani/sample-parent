@@ -28,16 +28,14 @@
                         <webModule>
                             <groupId>gr.javapapo</groupId>
                             <artifactId>sample-web</artifactId>
+
                             <contextRoot>tiziwatine</contextRoot>
                         </webModule>
                         <ejbModule>
                             <groupId>gr.javapapo</groupId>
                             <artifactId>sample-services</artifactId>
                         </ejbModule>
-                        <jarModule>
-                            <groupId>org.primefaces</groupId>
-                            <artifactId>primefaces</artifactId>
-                        </jarModule>
+
                     </modules>
                 </configuration>
             </plugin>
@@ -46,17 +44,19 @@
 
     <!-- our in app dependencies-->
     <dependencies>
-        <dependency>
-            <groupId>org.primefaces</groupId>
-            <artifactId>primefaces</artifactId>
-            <version>5.0</version>
-            <scope>compile</scope>
-        </dependency>
+
         <dependency>
             <groupId>gr.javapapo</groupId>
             <artifactId>sample-web</artifactId>
             <version>${project.version}</version>
             <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>5.0</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
