@@ -21,9 +21,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-ear-plugin</artifactId>
                 <configuration>
-                    <finalName>sampleapp</finalName>
                     <defaultJavaBundleDir>lib/</defaultJavaBundleDir>
                     <skinnyWars>true</skinnyWars>
+                    <workDirectory>target/sample-ear-exploded.ear</workDirectory>
                     <modules>
                         <webModule>
                             <groupId>gr.javapapo</groupId>
